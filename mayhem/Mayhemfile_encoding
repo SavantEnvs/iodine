@@ -1,0 +1,9 @@
+project: savantenvs/iodine
+target: encoding
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/encoding/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_encoding
+    libfuzzer: true
+    timeout: 10

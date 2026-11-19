@@ -1,0 +1,5 @@
+# meson build directories written by mayhem/build.sh (SPEC 6.2 item 16)
+/build-fuzz/
+/build-test/
+/obj/
+/build-afl/

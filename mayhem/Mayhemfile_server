@@ -1,0 +1,9 @@
+project: savantenvs/iodine
+target: server
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/server/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_server
+    libfuzzer: true
+    timeout: 10
